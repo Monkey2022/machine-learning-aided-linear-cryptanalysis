@@ -14,10 +14,7 @@ config = tf.compat.v1.ConfigProto(allow_soft_placement=True)
 config.gpu_options.allow_growth=True  
 session = tf.compat.v1.Session(config=config)  
 tf.compat.v1.keras.backend.set_session(session)#
-from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Dense, Conv1D, Input, Reshape, Permute, Add, Flatten, BatchNormalization, Activation
-from tensorflow.keras.callbacks import ModelCheckpoint
-from tensorflow.keras.regularizers import l2
+
 from tensorflow.keras.models import model_from_json
 from math import log2
 from time import time
